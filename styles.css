@@ -1,0 +1,117 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 2.3fr 0.4fr;
+  grid-gap: 0px 0px;
+  grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+  font-family: georgia;
+  background-color: #d5bdff;
+  height: 100%;
+}
+#header {
+  display: grid;
+  grid-template-columns: 0.6fr 1.7fr 0.7fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 0px 0px;
+  grid-template-areas: 
+    "img h1 nav"
+    "img h1 nav"
+    "img h1 nav";
+  grid-area: header;
+  height: 85px;
+  justify-content: space-evenly;
+  background-color: #84759e;
+  border-style: double;
+  border-width: 8px;
+  border-color: black;
+  border-radius: 5px;
+}
+/*-removing the nav block fixed the li wow.. to use display: inline*/
+h4 {
+  grid-area: h4;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  display: inline;
+  padding: 5px;
+}
+li {
+  display: inline;
+  padding: 5px;
+  grid-area: li;
+}
+footer {
+  grid-area: footer;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 0px 0px;
+  grid-template-areas: 
+    "menu menu order-form order-form"
+    "menu menu order-form order-form"
+    "menu menu order-form order-form";
+  grid-area: main;
+  border-style: inset;
+  border-width: 5px;
+  border-color: black;
+}
+#menu {
+  grid-area: menu;
+  border-style: inset;
+}
+#order-form {
+  grid-area: order-form;
+  justify-self: center;
+} /* use justify-self for all items in the box wow*/
+.menu{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr 0.8fr 0.8fr 0.8fr;
+  grid-gap: 0px 0px;
+  grid-template-areas:
+    "mh mh"
+    "star blade"
+    "orb selune"
+    "lae mamak"
+}
+#star{
+  grid-area: star;
+}
+#blade {
+  grid-area: blade;
+}
+#orb {
+  grid-area: orb;
+}
+#selune {
+  grid-area: selune;
+}
+#lae {
+  grid-area: lae;
+}
+#mamak {
+  grid-area: mamak;
+}
+ul{
+  list-style-type: none;
+}
+form {
+  justify-self: center;
+}
+#mh {
+  grid-area: mh;
+  justify-self: center;
+}
+p {
+  text-align: justify-all;
+}
+#button {
+  height: 25px;
+  width: 175px;
+  border-style: outset;
+  border-bottom-color: darkorchid;
+}
