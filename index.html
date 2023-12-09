@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Baldur's Gate Finest </title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <!--HEADER-->
+    <header id="header">
+       <img src="https://i.pinimg.com/564x/0f/1a/26/0f1a2636930dff633e4123d0972cf219.jpg" alt="shadowfart" id="header-img" height="85px">
+       <h1> Baldur's Gate Finests </h1>
+      <!--NAVIGATION-->
+       <nav> <h4>Navigation</h4>
+          <ul>
+            <li> <a href="#menu"> Menu </a> </li> 
+            <li> <a href="#order-form"> Order Form </a> </li>
+          </ul>
+       </nav>
+    </header>
+    <main>
+      <!--MENU-->
+      <section id="menu" class="menu">
+        <h2 id="mh">Menu</h2>
+        <!--ASTARION-->
+        <article id="star"><h3>Astarion <i>5 GP ea</i> </h3>
+          <figure>
+            <img src="https://i.pinimg.com/564x/ff/50/fd/ff50fdb4f8ee09374115df34473320b5.jpg" alt="astarion" height="200px">
+            <figcaption>Astarion judging you when you don't pick him</figcaption>
+          </figure> 
+          <p>Astarion is served with a side of sass, and topped with a sprinkle of trauma, to make the experience well rounded</p>
+        </article>
+        <!--WYLL-->
+        <article id="blade"> <h3>Wyll <i>5 GP ea</i></h3>
+          <figure>
+            <img src="https://i.pinimg.com/564x/a9/7e/e2/a97ee2e477f958b24efc40eba1b98c88.jpg" alt="wyll" height="200px">
+            <figcaption>Wyll mildly disgusted when you lick the spider</figcaption>
+          </figure>
+          <p>Wyll comes with a salad of finely sliced apples and with a glaze of father's problems </p>
+        </article>
+        <!--GALE-->
+        <article id="orb"> <h3>Gale <i>5 GP ea</i></h3>
+          <figure>
+            <img src="https://i.pinimg.com/564x/b3/90/0c/b3900ceb521c75714f3a85405b07d84f.jpg" alt="gale" height="200px">
+            <figcaption>Gale just being Gale</figcaption>
+          </figure>
+          <p>Gale comes with an explosive glaze of ashes and magic </p>
+        </article>
+        <!--SHADDY-->
+        <article id="selune"> <h3>Shadowheart <i>5 GP ea</i></h3>
+          <figure>
+            <img src="https://i.pinimg.com/564x/1c/2f/8b/1c2f8b2c1630f414e76f64e786208b22.jpg" alt="shadowheart" height="200px">
+            <figcaption>Sharry wondering if i'll ever finish a run</figcaption>
+          </figure>
+          <p>Shadowheart is served with a cup of indecision on the side </p>
+        </article>
+        <!--LAEZEL-->
+        <article id="lae"> <h3>Lae'zel <i>5 GP ea</i></h3>
+          <figure>
+            <img src="https://i.pinimg.com/564x/ae/58/b4/ae58b4122a44dbf40ab53ddfe87e5312.jpg" alt="laezel" height="200px">
+            <figcaption>Lae looking cute</figcaption>
+          </figure>
+          <p>Lae'zel is served with a sprinkle of gaslighting and girlbossing </p>
+        </article>
+        <!--KARLACH-->
+        <article id="mamak"> <h3>Mama Karlach <i>5 GP ea</i></h3>
+          <figure>
+            <img src="https://i.pinimg.com/564x/ea/f5/b6/eaf5b6bc7722684e7a4adb952b639698.jpg" alt="mamak" height="200px">
+            <figcaption>Mamak is wondering whats wrong with me</figcaption>
+          </figure>
+          <p>Mama Karlach is served with a chily so hot it will burn like Avernus </p>
+        </article>
+      </section>
+      <!--PLACE YOUR ORDER HERE-->
+      <section id="order-form">
+        <h2>Place your order.</h2>
+        <!--FORM, CHECK LABELS-->
+        <form>
+          <!--menu items/ num-->
+          <label for="A">Astarion <i>5 GP ea</i></label><br/>
+          <input type="number" min="0" id="A"/><br/>
+          <label for="G">Gale <i>5 GP ea</i></label><br/>
+          <input type="number" min="0" id="G"/><br/>
+          <label for="W">Wyll <i>5 GP ea</i></label><br/>
+          <input type="number" min="0" id="W"/><br/>
+          <label for="L">Lae'zel <i>5 GP ea</i></label><br/>
+          <input type="number" min="0" id="L"/><br/>
+          <label for="S">Shadowheart <i>5 GP ea</i></label><br/>
+          <input type="number" min="0" id="S"/><br/>
+          <label for="K">Mama Karlach <i>5 GP ea</i></label><br/>
+          <input type="number" min="0" id="K"/><br/>
+          <!--extras/ checkbox-->
+          <p>&#9734;extras: <i>2 sp ea</i> </p>
+          
+          <input type="checkbox" id="H"/> 
+          <label for="H">Halsin's cake</label><br>
+          <input type="checkbox" id="J"/>
+          <label for="J">Jaheira's chily</label><br>
+          <input type="checkbox" id="Mi"/> 
+          <label for="Mi">Minthara's fruit</label><br>
+          <input type="checkbox" id="B"/>
+          <label for="B">Minsc's salad</label><br>
+          <!--radio menu-->
+          &#9734;Want to make this a menu? <br/>
+          <input type="radio" name="menu" id="uu" required/>  
+          <label for="uu">yes <i>+2 sp</i></label>
+          <input type="radio" name="menu" id="uuu" required/>
+          <label for="uuu"> no</label><br/>
+          <!--radio drink-->
+          &#9734;Choose your drink:<br/>
+          
+          <input type="radio" name="drink" id="DRINK1"/>
+          <label for="DRINK1">Ketheric</label><br/>
+          <input type="radio" name="drink" id="DRINK2"/>
+          <label for="DRINK2">Gortash</label><br/>
+          <input type="radio" name="drink" id="DRINK3"/>
+          <label for="DRINK3">Orin</label><br/>
+          <!--text area and submit-->
+          <textarea rows="5" cols="21" placeholder="Add instructions here"></textarea><br>
+          <input type="submit" value="go to checkout" id="button">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <!--adding like links n stuff?-->
+      <p>Made with love by @ValentinaLynn </p>
+    </footer>
+  </body>
+</html>
